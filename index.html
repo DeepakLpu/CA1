@@ -48,6 +48,60 @@
         max-width: 50%;
       }
     }
+    @media (max-width: 600px) {
+      .hero {
+        background-image: url('heroimage-small.jpeg'); 
+      }
+
+      .hero h1 {
+        font-size: 2em;
+      }
+
+      .image-container {
+        max-width: 100%;
+      }
+
+      h2 {
+        font-size: 1.8em;
+      }
+    }
+    @media (min-width: 601px) and (max-width: 900px) {
+      .hero {
+        background-image: url('heroimage-medium.jpeg'); 
+      }
+
+      .hero h1 {
+        font-size: 2.5em;
+      }
+
+      .image-container {
+        max-width: 50%;
+      }
+
+      h2 {
+        font-size: 2.2em;
+      }
+    
+    
+    }
+
+    @media (min-width: 901px) {
+      .hero {
+        background-image: url('heroimage-large.jpeg'); 
+      }
+
+      .hero h1 {
+        font-size: 3.5em;
+      }
+
+      .image-container {
+        max-width: 33%;
+      }
+
+      h2 {
+        font-size: 2.5em;
+      }
+    }
   </style>
 </head>
 <body>
