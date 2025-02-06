@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimized Homepage</title>
+  </head>
+  <body>
+    <!-- Hero Image -->
+    <section class="hero">
+      <img src="images/hero-small.jpg"
+           srcset="images/hero-large.jpg 1200w, images/hero-medium.jpg 800w, images/hero-small.jpg 400w"
+           alt="Hero Image"
+           sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px">
+    </section>
+
+    <!-- Content Images -->
+    <section class="content">
+      <img src="images/content-small.jpg"
+           srcset="images/content-large.jpg 1200w, images/content-medium.jpg 800w, images/content-small.jpg 400w"
+           alt="Content Image"
+           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw">
+      <!-- Repeat similar img tags for other content images -->
+    </section>
+  </body>
+</html>
+
+
+
+
+/* Default styles for large screens */
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+/* Smaller devices */
+@media (max-width: 768px) {
+  .hero img {
+    width: 90%;
+    height: auto;
+  }
+
+  /* Adjust other elements like font-size, padding */
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Very small screens like mobile devices */
+@media (max-width: 480px) {
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust layout and font sizes for readability */
+  body {
+    font-size: 12px;
+  }
+}
